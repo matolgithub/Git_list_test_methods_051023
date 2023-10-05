@@ -3,7 +3,21 @@ class SimpleList:
         self.simple_list = simple_list
 
     def test_list(self):
-        print("It's really all right!")
+        self.simple_list.reverse()
+        print(f"The reverse list is: {self.simple_list}")
+
+        self.simple_list.sort(reverse=True)
+        print(self.simple_list)
+
+        self.simple_list.sort()
+        print(self.simple_list)
+
+        value_index_4 = self.simple_list.pop(4)
+        print(self.simple_list)
+        print(value_index_4)
+
+        max_value = max(self.simple_list)
+        print(max_value)
 
 
 if __name__ == "__main__":
